@@ -1,0 +1,48 @@
+@import '../sass/Import.sass'
+
+.home
+  //Dimentions
+  height: $content-height
+  //Color
+  //Plasement
+  margin: 0
+  padding: 0
+  //Effects
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  background-attachment: fixed
+
+
+.mainContent
+  //Dimentions
+  //Color
+  //Plasement
+  //Effects
+  +element('part')
+    //Dimentions
+    width: calc(100% / 3)
+    //Color
+    //Plasement
+    margin: 0
+    padding: 0
+    //Effects
+    flex-grow: 1
+    @media screen and (max-width: $XL-tablet)
+      //Dimentions
+      width: 100%
+      //Color
+      //Plasement
+      //Effects
+    +element('text')
+      //Dimentions
+      //Color
+      //Plasement
+      padding: 2em
+      //Effects
+      text-align: left
+
+//Dimentions
+//Color
+//Plasement
+//Effects

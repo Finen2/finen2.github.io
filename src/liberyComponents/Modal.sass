@@ -1,0 +1,157 @@
+@import '../sass/Import.sass'
+
+$modal-header-height: 5vh
+
+.modalSide
+  //Dimentions
+  height: 100vh
+  width: 100vw
+  //Color
+  background-color: $invisible-color-half
+  //Plasement
+  right: 0
+  top: 0
+  //Effects
+  display: none
+  position: fixed
+  display: none
+  z-index: 900
+
+  +element('content')
+    //Dimentions
+    height: 100vh
+    width: 20%
+    //Color
+    background-color: $card-background-color
+    color: $text-color
+    //Plasement
+    right: 0
+    //Effects
+    float: right
+    @media screen and (max-width: $XL-tablet)
+      //Dimentions
+      width: 30%
+      //Color
+      //Plasement
+      //Effects
+    @media screen and (max-width: $L-tablet)
+      //Dimentions
+      width: 40%
+      //Color
+      //Plasement
+      //Effects
+    @media screen and (max-width: $M-tablet)
+      //Dimentions
+      width: 60%
+      //Color
+      //Plasement
+      //Effects
+    @media screen and (max-width: $M-phone)
+      //Dimentions
+      width: 80%
+      //Color
+      //Plasement
+      //Effects
+
+    +element('head')
+      //Dimentions
+      height: $modal-header-height
+      //Color
+      //Plasement
+      padding-left: 1.5em
+      padding-right: 1.5em
+      //Effects
+      cursor: pointer
+      display: flex
+      justify-content: space-between
+      align-items: center
+
+      +modifier('primary')
+        //Dimentions
+        //Color
+        background-color: $color-background-primary
+        color: $color-text-primary
+        //Plasement
+        //Effects
+
+      +modifier('secondary')
+        //Dimentions
+        //Color
+        background-color: $color-background-secondary
+        color: $color-text-secondary
+        //Plasement
+        //Effects
+
+      +modifier('success')
+        //Dimentions
+        //Color
+        background-color: $color-background-success
+        color: $color-text-success
+        //Plasement
+        //Effects
+
+      +modifier('danger')
+        //Dimentions
+        //Color
+        background-color: $color-background-danger
+        color: $color-text-danger
+        //Plasement
+        //Effects
+
+      +modifier('warning')
+        //Dimentions
+        //Color
+        background-color: $color-background-warning
+        color: $color-text-warning
+        //Plasement
+        //Effects
+
+      +modifier('info')
+        //Dimentions
+        //Color
+        background-color: $color-background-info
+        color: $color-text-info
+        //Plasement
+        //Effects
+
+      +modifier('light')
+        //Dimentions
+        //Color
+        background-color: $color-background-light
+        color: $color-text-light
+        //Plasement
+        //Effects
+
+      +modifier('dark')
+        //Dimentions
+        //Color
+        background-color: $color-background-dark
+        color: $color-text-dark
+        //Plasement
+        //Effects
+
+
+    +element('body')
+      //Dimentions
+      height: calc(90vh - #{$modal-header-height})
+      //Color
+      //Plasement
+      padding-top: 1em
+      //Effects
+
+  +element('closeModal')
+    //Dimentions
+    height: 100vh
+    width: 80%
+    //Color
+    background-color: $invisible-color-third
+    //Plasement
+    //Effects
+    cursor: pointer
+    z-index: 999
+
+
+//Dimentions
+//Color
+//Plasement
+//Effects

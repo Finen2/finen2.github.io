@@ -1,0 +1,263 @@
+@import '../sass/Import.sass'
+
+.btn
+  //Dimentions
+  width: 40%
+  height: 4vh
+  //Color
+  background-color: $secondary-color
+  color: $test-color-light
+  //Plasement
+  position: relative
+  display: block
+  padding: 0
+  //Effects
+  overflow: hidden
+  border-width: 0
+  outline: none
+  border-radius: $border-radius-main
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6)
+  font-size: 1em
+  transition: background-color .3s
+  &:before
+    //Dimentions
+    width: 0
+    //Color
+    background-color: $color-hover-primary
+    //Plasement
+    top: 50%
+    left: 50%
+    padding-top: 0
+    //Effects
+    content: ""
+    position: absolute
+    display: block
+    border-radius: 100%
+    -webkit-transform: translate(-50%, -50%)
+    -moz-transform: translate(-50%, -50%)
+    -ms-transform: translate(-50%, -50%)
+    -o-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)
+
+  &:active:before
+    //Dimentions
+    width: 120%
+    //Color
+    //Plasement
+    padding-top: 120%
+    //Effects
+    transition: width .2s ease-out, padding-top .2s ease-out
+
+  //Size
+  //Set size
+  +modifier('set-XS')
+    //Dimentions
+    width: 25px
+    //Color
+    //Plasement
+    //Effects
+
+  +modifier('set-S')
+    //Dimentions
+    width: 50px
+    //Color
+    //Plasement
+    //Effects
+
+  +modifier('set-M')
+    //Dimentions
+    width: 100px
+    //Color
+    //Plasement
+    //Effects
+
+  +modifier('set-L')
+    //Dimentions
+    width: 200px
+    //Color
+    //Plasement
+    //Effects
+
+  +modifier('set-XL')
+    //Dimentions
+    width: 400px
+    //Color
+    //Plasement
+    //Effects
+
+  //Relative Size
+  +modifier('XS')
+    //Dimentions
+    width: 10%
+    //Color
+    //Plasement
+    //Effects
+
+  +modifier('S')
+    //Dimentions
+    width: 20%
+    //Color
+    //Plasement
+    //Effects
+
+  +modifier('M')
+    //Dimentions
+    width: 40%
+    //Color
+    //Plasement
+    //Effects
+  +modifier('L')
+    //Dimentions
+    width: 60%
+    //Color
+    //Plasement
+    //Effects
+  +modifier('XL')
+    //Dimentions
+    width: 80%
+    //Color
+    //Plasement
+    //Effects
+
+  +modifier('XXL')
+    //Dimentions
+    width: 100%
+    //Color
+    //Plasement
+    //Effects
+
+
+  // Color
+  +modifier('primary')
+    //Dimentions
+    //Color
+    background-color: $color-background-primary
+    color: $color-text-primary
+    //Plasement
+    //Effects
+    &:before, &:hover, &:focus
+      //Dimentions
+      //Color
+      background-color: $color-hover-primary
+      //Plasement
+      //Effects
+
+
+  +modifier('secondary')
+    //Dimentions
+    //Color
+    background-color: $color-background-secondary
+    color: $color-text-secondary
+    //Plasement
+    //Effects
+    &:before, &:hover, &:focus
+      //Dimentions
+      //Color
+      background-color: $color-hover-secondary
+      //Plasement
+      //Effects
+
+
+
+  +modifier('success')
+    //Dimentions
+    //Color
+    background-color: $color-background-success
+    color: $color-text-success
+    //Plasement
+    //Effects
+    &:before, &:hover, &:focus
+      //Dimentions
+      //Color
+      background-color: $color-hover-success
+      //Plasement
+      //Effects
+
+
+
+  +modifier('danger')
+    //Dimentions
+    //Color
+    background-color: $color-background-danger
+    color: $color-text-danger
+    //Plasement
+    //Effects
+    &:before, &:hover, &:focus
+      //Dimentions
+      //Color
+      background-color: $color-hover-danger
+      //Plasement
+      //Effects
+
+
+
+  +modifier('warning')
+    //Dimentions
+    //Color
+    background-color: $color-background-warning
+    color: $color-text-warning
+    //Plasement
+    //Effects
+    &:before, &:hover, &:focus
+      //Dimentions
+      //Color
+      background-color: $color-hover-warning
+      //Plasement
+      //Effects
+
+
+
+  +modifier('info')
+    //Dimentions
+    //Color
+    background-color: $color-background-info
+    color: $color-text-info
+    //Plasement
+    //Effects
+    &:before, &:hover, &:focus
+      //Dimentions
+      //Color
+      background-color: $color-hover-info
+      //Plasement
+      //Effects
+
+
+  +modifier('light')
+    //Dimentions
+    //Color
+    background-color: $color-background-light
+    color: $color-text-light
+    //Plasement
+    //Effects
+    &:before, &:hover, &:focus
+      //Dimentions
+      //Color
+      background-color: $color-hover-light
+      //Plasement
+      //Effects
+
+
+
+  +modifier('dark')
+    //Dimentions
+    //Color
+    background-color: $color-background-dark
+    color: $color-text-dark
+    //Plasement
+    //Effects
+    &:before, &:hover, &:focus
+      //Dimentions
+      //Color
+      background-color: $color-hover-dark
+      //Plasement
+      //Effects
+
+
+
+// .btn > *
+//   position: relative
+
+//Dimentions
+//Color
+//Plasement
+//Effects

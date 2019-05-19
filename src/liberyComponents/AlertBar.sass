@@ -1,0 +1,127 @@
+@import '../sass/Imports.sass'
+
+$close-button-dimentions: 30px
+$alertBar-height: 5vh
+
+.alertBar
+  display: none
+  //Dimentions
+  width: 60%
+  height: $alertBar-height
+  //Plasement
+  padding: 0
+  right: 20vw
+  bottom: calc(#{$alertBar-height} / 2)
+  //Color
+  background-color: $color-background-danger
+  color: $color-text-danger
+  //Effects
+  position: fixed
+  border-radius: calc( #{$border-radius-standard} / 2)
+  z-index: 900
+  // opacity: 1
+  // transition: opacity 0.6s
+
+  +element('icon')
+    //Dimentions
+    height: calc(#{$alertBar-height} / 2)
+    width: $close-button-dimentions
+    //Color
+    //Plasement
+    //Effects
+    font-size: $close-button-dimentions
+    font-weight: bold
+    flex-grow: 1
+    align-self: center
+
+  +element('close')
+    //Dimentions
+    height: $alertBar-height
+    width: $close-button-dimentions
+    //Color
+    //Plasement
+    padding-top: calc(calc(#{$alertBar-height} - #{$close-button-dimentions}) / 2)
+    //Effects
+    font-size: $close-button-dimentions
+    font-weight: bold
+    flex-grow: 1
+    &:hover, &:focus
+      //Dimentions
+      //Color
+      //Plasement
+      //Effects
+      text-decoration: none
+      cursor: pointer
+      opacity: 0.5
+
+  +element('textArea')
+    //Dimentions
+    //width: calc(100% - #{$close-button-dimentions})
+    //Color
+    //Plasement
+    //Effects
+    flex-grow: 20
+
+  +modifier('primary')
+    //Dimentions
+    //Color
+    background-color: $color-background-primary
+    color: $color-text-primary
+    //Plasement
+    //Effects
+  +modifier('secondary')
+    //Dimentions
+    //Color
+    background-color: $color-background-secondary
+    color: $color-text-secondary
+    //Plasement
+    //Effects
+  +modifier('success')
+    //Dimentions
+    //Color
+    background-color: $color-background-success
+    color: $color-text-success
+    //Plasement
+    //Effects
+  +modifier('danger')
+    //Dimentions
+    //Color
+    background-color: $color-background-danger
+    color: $color-text-danger
+    //Plasement
+    //Effects
+  +modifier('warning')
+    //Dimentions
+    //Color
+    background-color: $color-background-warning
+    color: $color-text-warning
+    //Plasement
+    //Effects
+  +modifier('info')
+    //Dimentions
+    //Color
+    background-color: $color-background-info
+    color: $color-text-info
+    //Plasement
+    //Effects
+  +modifier('light')
+    //Dimentions
+    //Color
+    background-color: $color-background-light
+    color: $color-text-light
+    //Plasement
+    //Effects
+  +modifier('dark')
+    //Dimentions
+    //Color
+    background-color: $color-background-dark
+    color: $color-text-dark
+    //Plasement
+    //Effects
+
+
+
+//Dimentions
+//Color
+//Plasement
+//Effects

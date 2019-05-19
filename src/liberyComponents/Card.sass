@@ -1,0 +1,262 @@
+@import '../sass/Import.sass'
+
+$border-card-content-divider: 0.1em solid $text-color-subnav
+
+.card
+  //Dimentions
+  width: 50%
+  min-height: 30vh
+  height: auto
+  //Color
+  background-color: $card-background-color
+  color: $text-color
+  //Plasement
+  margin: 5%
+  //Effects
+  box-shadow: $main-shadow
+  border-radius: 0.5em
+  flex-direction: column
+  overflow: hidden
+
+  +element('image')
+    //display and flex-grow value i set by javascript in Card.ts
+    //Dimentions
+    width: auto
+    height: auto
+    //Color
+    //Plasement
+    //Effects
+    align-self: center
+    object-fit: contain
+
+
+    +modifier('XS')
+      //Dimentions
+      max-width: 20%
+      max-height: 20%
+      //Color
+      //Plasement
+      //Effects
+
+    +modifier('S')
+      //Dimentions
+      max-width: 40%
+      max-height: 40%
+      //Color
+      //Plasement
+      //Effects
+
+    +modifier('M')
+      //Dimentions
+      max-width: 60%
+      max-height: 60%
+      //Color
+      //Plasement
+      //Effects
+
+    +modifier('L')
+      //Dimentions
+      max-width: 80%
+      max-height: 80%
+      //Color
+      //Plasement
+      //Effects
+
+    +modifier('XL')
+      //Dimentions
+      max-width: 100%
+      max-height: 100%
+      //Color
+      //Plasement
+      //Effects
+
+    +modifier('XS-circle')
+      //Dimentions
+      max-width: 20%
+      max-height: 20%
+      //Color
+      //Plasement
+      //Effects
+      border-radius: 50%
+
+    +modifier('S-circle')
+      //Dimentions
+      max-width: 40%
+      max-height: 40%
+      //Color
+      //Plasement
+      //Effects
+      border-radius: 50%
+
+    +modifier('M-circle')
+      //Dimentions
+      max-width: 60%
+      max-height: 60%
+      //Color
+      //Plasement
+      //Effects
+      border-radius: 50%
+
+    +modifier('L-circle')
+      //Dimentions
+      max-width: 80%
+      max-height: 80%
+      //Color
+      //Plasement
+      //Effects
+      border-radius: 50%
+
+    +element('XL-circle')
+      //Dimentions
+      max-width: 100%
+      max-height: 100%
+      //Color
+      //Plasement
+      //Effects
+      border-radius: 50%
+
+  +element('contentWrapper')
+    //Dimentions
+    height: auto
+    width: auto
+    //Color
+    //Plasement
+    //Effects
+    flex-grow: 1
+
+  // Content inside content wrapper set in parent component
+  +element('content')
+    //Dimentions
+    height: auto
+    min-height: 2em
+    width: 100%
+    //Color
+    //Plasement
+    //Effects
+    flex-grow: 4
+    +element('text')
+      //Dimentions
+      //Color
+      //Plasement
+      margin: 5%
+      text-align: left
+      //Effects
+
+  +element('header')
+    //Dimentions
+    height: auto
+    min-height: 2em
+    width: 100%
+    //Color
+    background-color: $card-background-header-color
+    //Plasement
+    //Effects
+    border-bottom: $border-card-content-divider
+    flex-grow: 1
+    +element('text')
+      //Dimentions
+      //Color
+      //Plasement
+      text-align: left
+      margin: 1em 5%
+      //Effects
+      align-self: center
+
+  +element('footer')
+    //Dimentions
+    height: auto
+    min-height: 2em
+    width: 100%
+    //Color
+    //Plasement
+    //Effects
+    border-top: $border-card-content-divider
+    flex-grow: 1
+    +element('text')
+      //Dimentions
+      //Color
+      //Plasement
+      margin: 1em 5%
+      text-align: left
+      //Effects
+      align-self: center
+
+  //Versions
+  +modifier('image-top')
+    //Dimentions
+    //Color
+    //Plasement
+    //Effects
+    flex-direction: column
+
+  +modifier('image-left')
+    //Dimentions
+    //Color
+    //Plasement
+    //Effects
+    flex-direction: row
+
+
+  +modifier('image-right')
+    //Dimentions
+    //Color
+    //Plasement
+    //Effects
+    flex-direction: row-reverse
+
+  +modifier('image-bottom')
+    //Dimentions
+    //Color
+    //Plasement
+    //Effects
+    flex-direction: column-reverse
+
+
+  //Sizes
+  +modifier('XS')
+    //Dimentions
+    min-height: 10vh
+    width: 10%
+    //Color
+    //Plasement
+    //Effects
+  +modifier('S')
+    //Dimentions
+    min-height: 20vh
+    width: 20%
+    //Color
+    //Plasement
+    //Effects
+  +modifier('M')
+    //Dimentions
+    width: 40%
+    //Color
+    //Plasement
+    //Effects
+  +modifier('L')
+    //Dimentions
+    width: 60%
+    //Color
+    //Plasement
+    //Effects
+  +modifier('XL')
+    //Dimentions
+    width: 80%
+    //Color
+    //Plasement
+    //Effects
+
+  +modifier('XXL')
+    //Dimentions
+    width: 100%
+    //Color
+    //Plasement
+    //Effects
+
+
+
+
+//Dimentions
+//Color
+//Plasement
+//Effects
